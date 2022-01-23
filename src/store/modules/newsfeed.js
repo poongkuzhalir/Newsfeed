@@ -28,7 +28,7 @@ const actions = {
     },
 
     async addNewsfeed({commit}, payload) {
-        const response = await axios.post('https://mocki.io/v1/f8de2ff1-24ac-4098-b95f-77186265e2d3', payload);
+        const response = await axios.post('https://jsonplaceholder.typicode.com/posts/', payload);
         commit('newNewsfeed', response.data)
     },
 
